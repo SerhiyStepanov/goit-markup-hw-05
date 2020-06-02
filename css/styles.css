@@ -820,7 +820,7 @@ footer {
   letter-spacing: 0.03em;
 
   color: var(--primary-white-color);
-  opacity: 0;
+  opacity: 1;
 }
 
 .cart .link:hover ::before,
