@@ -808,12 +808,13 @@ footer {
   opacity: 0;
 }
 
-.hidden {
+.text-hidden {
   position: absolute;
   top: 0;
   left: 0;
-  display: inline-block;
+  display: block;
   padding: 63px 24px;
+  margin: 0;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -822,7 +823,8 @@ footer {
   opacity: 0;
 }
 
-.cart .link:hover ::before .cart .link:focus {
+.cart .link:hover ::before,
+.cart .link:focus {
   opacity: 1;
 }
 
