@@ -789,6 +789,43 @@ footer {
   display: block;
 }
 
+.product {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.product:before,
+.product:focus {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+  opacity: 0;
+}
+
+.cart .link:hover ::before .cart .link:focus {
+  opacity: 1;
+}
+
 .cart .content {
   padding-top: 20px;
   padding-right: 24px;
@@ -820,13 +857,4 @@ footer {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-}
-
-.section-portfolio .text {
-  display: none;
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-white-color);
 }
