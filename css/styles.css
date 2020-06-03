@@ -847,8 +847,15 @@ footer {
   border-bottom-right-radius: 5px;
 }
 
-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-  0px 1px 1px rgba(0, 0, 0, 0.12);
+.cart .content::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 
 .cart .element:nth-child(3n) {
   margin-right: 0;
