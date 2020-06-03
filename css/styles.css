@@ -780,6 +780,7 @@ footer {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: hidden;
@@ -808,24 +809,24 @@ footer {
   opacity: 0;
 }
 
-.text-hidden {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  padding: 63px 24px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-white-color);
-  opacity: 1;
-}
-
 .cart .link:hover ::before,
 .cart .link:focus {
   opacity: 1;
+}
+
+.text-hidden {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+  opacity: 0.5;
 }
 
 .cart .content {
@@ -833,6 +834,7 @@ footer {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
