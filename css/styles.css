@@ -796,10 +796,6 @@ footer {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  overflow: hidden;
 }
 
 .cart .link {
@@ -861,6 +857,23 @@ footer {
   border-left: 1px solid #eeeeee;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.cart .content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+}
+
+.cart .link:hover .content::after,
+.cart .linc:focus .content::after {
+  opacity: 1;
 }
 
 .cart .element:nth-child(3n) {
