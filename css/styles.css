@@ -7,7 +7,7 @@
   --primary-white-color: #fff;
   --primary-footer-color: #2f303a;
   --primary-social-color: #afb1b8;
-  --time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -139,7 +139,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 
-  transition: color var(--time-cubic);
+  transition: color 250ms var(--cubic);
 }
 
 .site-nav .link:hover,
@@ -195,7 +195,7 @@ img {
   color: var(--primary-text-coor);
   fill: var(--primary-text-coor);
 
-  transition: color var(--time-cubic), fill var(--time-cubic);
+  transition: color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
 .page-header .contact .link:hover,
@@ -457,7 +457,7 @@ img {
   fill: var(--primary-social-color);
   border-radius: 50%;
 
-  transition: background-color var(--time-cubic), fill var(--time-cubic);
+  transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
 .team-social .icon-instagram {
@@ -528,7 +528,7 @@ img {
   border-radius: 4px;
   fill: var(--primary-social-color);
 
-  transition: border var(--time-cubic), fill var(--time-cubic);
+  transition: border 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
 .customers .link:hover,
@@ -662,7 +662,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--background-first);
 
-  transition: background-color var(--time-cubic), fill var(--time-cubic);
+  transition: background-color 250ms var(--cubic), fill 250 var(--cubic);
 }
 
 .foot-seti .link:hover,
