@@ -840,7 +840,6 @@ footer {
 .cart .link:hover ::before,
 .cart .link:focus ::before {
   transform: translateY(0%);
-  transition: transform var(--time-cubic);
 }
 
 .text-hidden {
@@ -863,7 +862,6 @@ footer {
 .cart .link:hover .text-hidden,
 .cart .link:focus .text-hidden {
   transform: translateY(0);
-  transition: transform var(--time-cubic);
 }
 
 .cart .content {
