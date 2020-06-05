@@ -820,6 +820,8 @@ footer {
   display: block;
   width: 100%;
   height: 100%;
+
+  overflow: hidden;
 }
 
 .product::before {
@@ -830,14 +832,15 @@ footer {
   height: 100%;
 
   background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(+100%);
+  transition: transform var(--time-cubic);
 }
 
 .cart .link:hover ::before,
 .cart .link:focus ::before {
-  opacity: 1;
+  transform: translateY(0%);
+  transition: transform var(--time-cubic);
 }
 
 .text-hidden {
@@ -852,14 +855,15 @@ footer {
   letter-spacing: 0.03em;
 
   color: var(--primary-white-color);
-  opacity: 0;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(+100%);
+  transition: transform var(--time-cubic);
 }
 
 .cart .link:hover .text-hidden,
 .cart .link:focus .text-hidden {
-  opacity: 1;
+  transform: translateY(0);
+  transition: transform var(--time-cubic);
 }
 
 .cart .content {
