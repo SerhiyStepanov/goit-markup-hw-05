@@ -787,7 +787,7 @@ footer {
   background-color: var(--background-second);
   color: var(--title-text-color);
 
-  transition: background-color var(--time-cubic), color var(--time-cubic);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .section-portfolio .filter:hover,
@@ -834,7 +834,7 @@ footer {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(+100%);
-  transition: transform var(--time-cubic);
+  transition: transform 250ms var(--cubic);
 }
 
 .cart .link:hover ::before,
@@ -856,7 +856,7 @@ footer {
   color: var(--primary-white-color);
 
   transform: translateY(+100%);
-  transition: transform var(--time-cubic);
+  transition: transform 250ms var(--cubic);
 }
 
 .cart .link:hover .text-hidden,
@@ -887,7 +887,7 @@ footer {
     0px 1px 1px rgba(0, 0, 0, 0.12);
   opacity: 0;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic);
 }
 
 .cart .link:hover .content::after,
