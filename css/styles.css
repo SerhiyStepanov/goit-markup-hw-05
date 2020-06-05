@@ -7,6 +7,7 @@
   --primary-white-color: #fff;
   --primary-footer-color: #2f303a;
   --primary-social-color: #afb1b8;
+  --time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -137,6 +138,8 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+
+  transition: color var(--time-cubic);
 }
 
 .site-nav .link:hover,
@@ -191,6 +194,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-coor);
   fill: var(--primary-text-coor);
+
+  transition: color var(--time-cubic), fill var(--time-cubic);
 }
 
 .page-header .contact .link:hover,
@@ -451,6 +456,8 @@ img {
   background-color: var(--background-first);
   fill: var(--primary-social-color);
   border-radius: 50%;
+
+  transition: background-color var(--time-cubic), fill var(--time-cubic);
 }
 
 .team-social .icon-instagram {
@@ -475,8 +482,8 @@ img {
 
 .team-social .link:hover,
 .team-social .link:focus {
-  fill: var(--background-first);
   background-color: var(--acent-color);
+  fill: var(--background-first);
 }
 
 /* секция постоянные клиенты */
@@ -520,12 +527,14 @@ img {
   border: 1px solid var(--primary-social-color);
   border-radius: 4px;
   fill: var(--primary-social-color);
+
+  transition: border var(--time-cubic), fill var(--time-cubic);
 }
 
 .customers .link:hover,
 .customers .link:focus {
-  fill: var(--acent-color);
   border: 1px solid var(--acent-color);
+  fill: var(--acent-color);
 }
 
 .icon-logo-1 {
@@ -652,6 +661,8 @@ footer {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--background-first);
+
+  transition: background-color var(--time-cubic), fill var(--time-cubic);
 }
 
 .foot-seti .link:hover,
@@ -775,6 +786,8 @@ footer {
   border-radius: 4px;
   background-color: var(--background-second);
   color: var(--title-text-color);
+
+  transition: background-color var(--time-cubic), color var(--time-cubic);
 }
 
 .section-portfolio .filter:hover,
@@ -818,6 +831,8 @@ footer {
 
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cart .link:hover ::before,
@@ -838,6 +853,8 @@ footer {
 
   color: var(--primary-white-color);
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cart .link:hover .text-hidden,
@@ -867,6 +884,8 @@ footer {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cart .link:hover .content::after,
